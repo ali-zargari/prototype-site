@@ -1,12 +1,17 @@
 /*Innitialize Canvas*/
-html,body{
+html,body, h1, p{
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .header{
   width: 100%;
+  height: 50px;
   display: flex;
 }
 
@@ -22,11 +27,13 @@ html,body{
   flex-direction: column;
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 .row{
   border-style: solid;
   height: 20%;
+
   flex:1 1 auto;
 
 }
@@ -34,31 +41,58 @@ html,body{
 /*Set up the top part of the site + the included banners*/
 .top{
   flex:1 1 35%;
-  background-color: red;
 }
 
 .banner{
   display: flex;
   height: 100%;
   width: 100%;
-}
-
-.banner .left{
-  background-color: blue;
-  width: 100%;
-  display: flex;
   flex-direction: column;
+  justify-content: center;
+  background: url("../img/photos2.webp");
+
+
 }
 
-.banner .left h1{
+.banner h1{
+  padding-top: 50px;
+  flex: 1 1 70%;
+  text-align: center;
+  justify-content:center;
   color: white;
   width: 100%;
+  font-size: 170%;
 }
 
-.banner .right{
-  background-color: gray;
-  width: 100%;
+.button_pane{
+  flex: 1 1 5%;
+  display: flex;
+  justify-content: center;
+
 }
+
+#learn_button {
+	background-color:#44c767;
+	border-radius:1000px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+  margin-bottom: 40px;
+}
+#learn_button:hover {
+	background-color:#5cbf2a;
+}
+#learn_button:active {
+	position:relative;
+	top:1px;
+}
+
+
 
 /*Middle section of the site, and all its components*/
 
