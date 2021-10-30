@@ -10,6 +10,10 @@ html,body, h1, p, ul{
 
 }
 
+html{
+  height: 1200px;
+}
+
 body{
     background: url("../img/photos2.webp");
 }
@@ -21,7 +25,7 @@ body{
   flex-direction: column;
   width: 100%;
   height: 100%;
-  margin-top:85px;
+  margin-top:100px;
 
 }
 
@@ -80,10 +84,10 @@ body{
 	text-shadow:0px 1px 0px #2f6627;
 /* 	  margin-bottom: 40px;*/
 }
-.learn_button:hover {
+.button:hover {
 	background-color:#5cbf2a;
 }
-.learn_button:active {
+.button:active {
 	position:relative;
 	top:1px;
 }
@@ -183,7 +187,6 @@ body{
 .navigation{
   padding-left: 50%;
   flex: 1 1 100%;
-  align-content: flex-end;
 }
 
 .header .navigation ul{
