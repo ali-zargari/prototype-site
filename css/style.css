@@ -30,6 +30,7 @@ body{
 }
 
 .row{
+  border: 1px;
   border-style: solid;
   height: 20%;
   display: flex;
@@ -64,8 +65,14 @@ body{
 }
 
 .banner span{
-  font-weight: bold;
-  color: orange;
+
+    padding-top: 50px;
+    flex: 1 1 70%;
+    text-align: center;
+    justify-content:center;
+    color: orange;
+    width: 100%;
+    font-size: 130%;
 }
 
 .button_pane{
@@ -141,16 +148,51 @@ body{
   height: 120px;
   width: 120px;
   border-radius: 10px;
-  display: inline-block;
   border: 5px solid orange;
   margin-left: 3%;
   margin-right: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". icon ."
+    ". . .";
+}
+
+.icon{
+  grid-area: icon;
+  align-self: center;
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+
+.message{
+  text-align: center;
+  color: white;
 }
 
 /* Bottom part of the site, and all the components*/
 .bottom{
   flex:1 1 20%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.place-holder{
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  border: 5px solid orange;
+  width: 50%;
+  height: 50%;
+  align-self: center;
+  left: 24%;
+
+  text-align: center;
+  line-height: 100px;
+  color: white;
 }
 
 .ad{
@@ -165,7 +207,7 @@ body{
 
 .header{
   width: 100%;
-  height: 85px;
+  height: 100px;
   position: fixed;
   top: 0%;
   right: 0;
@@ -212,5 +254,10 @@ body{
 }
 
 .navigation li{
-  margin-left: 25px;
+  margin-lseft: 25px;
+}
+
+.material-icons-outlined{
+  width: auto;
+  height: auto;
 }
