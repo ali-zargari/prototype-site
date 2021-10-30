@@ -40,6 +40,7 @@ body{
 }
 
 .banner{
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   height: 100%;
   width: 100%;
@@ -117,6 +118,20 @@ body{
 .mid{
   flex:1 1 25%;
   background-color:rgba(0, 0, 0, 0.5);
+  flex-direction: row;
+  justify-content: center;
+  padding-top:5%;
+}
+
+.info{
+  height: 120px;
+  width: 120px;
+  border-radius: 10px;
+  display: inline-block;
+
+  border: 5px solid #1C6EA4;
+  margin-left: 0px;
+  margin-right: 15px;
 }
 
 /* Bottom part of the site, and all the components*/
@@ -153,24 +168,31 @@ body{
 }
 
 .header .logo{
-  content: url("../img/—Pngtree—creative company_1421625.png");
-  top: 0px;
-  right: 1800px;
-  justify-content: flex-start;
-  width: 100px;
-  height: 85px;
-
-}
-/*Set up navigation bar*/
-
-.header .navigation{
   flex: 1 1 100%;
+  top: 0px;
+  justify-content: flex-start;
+}
+
+#thepic{
+  content: url("../img/—Pngtree—creative company_1421625.png");
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/*Set up navigation bar*/
+.navigation{
+  padding-left: 50%;
+  flex: 1 1 100%;
+  align-content: flex-end;
+}
+
+.header .navigation ul{
   position: relative;
-  justify-content: flex-end;
   list-style: none;
-  margin-right: 25px;
+  right: 0%;
+}
+.navigation .button{
   top:20%;
-  left:70%;
 }
 
 .navigation li{
