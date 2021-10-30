@@ -5,9 +5,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <script src="js/index.js"></script>
     <title>Title</title>
     <div class="header">
         <div class="header logo">
@@ -17,21 +17,34 @@
             list item, list item, list item
         </div>
     </div>
-
 </head>
 
 <body>
+
     <div class = "container">
         <div class = "row top">
             <div class = "banner">
 
-                <h1>End your search.<br> Begin a journey.</h1>
+              <h1>End your search.<br> Begin a journey.</h1>
 
-                <div class="button_pane">
-                    <div id="learn_button">Learn More</div>
-                </div>
+              <div class="button_pane">
+                  <div id="learn_button">Learn More</div>
+              </div>
 
             </div>
+
+            <div class = "Map">
+              <div id="map"></div>
+
+              <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+              <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGxTBLvTvtrgrXEYh3voFnYBnjoD4SiHk&callback=initMap&libraries=&v=weekly"
+                async
+              ></script>
+
+
+            </div>
+
 
         </div>
 
@@ -45,17 +58,17 @@
 
             <div class="info2">
               <div class="info2 pic">Pic</div>
-              <div class="info2 message">Pic</div>            
+              <div class="info2 message">Pic</div>
             </div>
-            
+
             <div class="info3">
               <div class="info3 pic">Pic</div>
-              <div class="info3 message">Pic</div>            
+              <div class="info3 message">Pic</div>
             </div>
-            
+
             <div class="info4">
               <div class="info4 pic">Pic</div>
-              <div class="info4 message">Pic</div>            
+              <div class="info4 message">Pic</div>
             </div>
         </div>
 

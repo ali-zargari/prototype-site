@@ -18,6 +18,7 @@ html,body, h1, p{
 /*Set up navigation bar*/
 
 .navigation{
+
   justify-content: flex-end;
 }
 
@@ -33,14 +34,15 @@ html,body, h1, p{
 .row{
   border-style: solid;
   height: 20%;
-
+  display: flex;
   flex:1 1 auto;
-
 }
 
 /*Set up the top part of the site + the included banners*/
 .top{
   flex:1 1 35%;
+  background: url("../img/photos2.webp");
+
 }
 
 .banner{
@@ -49,12 +51,10 @@ html,body, h1, p{
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  background: url("../img/photos2.webp");
-
-
 }
 
 .banner h1{
+
   padding-top: 50px;
   flex: 1 1 70%;
   text-align: center;
@@ -71,6 +71,7 @@ html,body, h1, p{
 
 }
 
+/* Button */
 #learn_button {
 	background-color:#44c767;
 	border-radius:1000px;
@@ -92,13 +93,30 @@ html,body, h1, p{
 	top:1px;
 }
 
+/*will contain an interactive map*/
+.Map{
+  flex: 1 1 100%;
+  justify-content: center;
+  height: 100%;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 100%;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
 
 /*Middle section of the site, and all its components*/
 
 .mid{
   flex:1 1 25%;
-  background-color: green;
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
 /* Bottom part of the site, and all the components*/
