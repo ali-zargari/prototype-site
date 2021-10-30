@@ -1,26 +1,19 @@
 /*Innitialize Canvas*/
-html,body, h1, p{
+html,body, h1, p, ul{
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     font-family: 'Zen Maru Gothic', sans-serif;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 20px;
+
 }
 
-.header{
-  width: 100%;
-  height: 50px;
-  display: flex;
+body{
+    background: url("../img/photos2.webp");
 }
 
-/*Set up navigation bar*/
-
-.navigation{
-
-  justify-content: flex-end;
-}
 
 /*Set up main container, and all it's rows*/
 .container{
@@ -28,7 +21,8 @@ html,body, h1, p{
   flex-direction: column;
   width: 100%;
   height: 100%;
-  margin: 0;
+  margin-top:85px;
+
 }
 
 .row{
@@ -41,7 +35,7 @@ html,body, h1, p{
 /*Set up the top part of the site + the included banners*/
 .top{
   flex:1 1 35%;
-  background: url("../img/photos2.webp");
+
 
 }
 
@@ -72,29 +66,34 @@ html,body, h1, p{
 }
 
 /* Button */
-#learn_button {
+.button {
 	background-color:#44c767;
 	border-radius:1000px;
 	border:1px solid #18ab29;
-	display:inline-block;
+  display:inline-block;
 	color:#ffffff;
 	font-family:Arial;
 	font-size:17px;
-	padding:16px 31px;
+	padding:10px 10px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
-  margin-bottom: 40px;
+/* 	  margin-bottom: 40px;*/
 }
-#learn_button:hover {
+.learn_button:hover {
 	background-color:#5cbf2a;
 }
-#learn_button:active {
+.learn_button:active {
 	position:relative;
 	top:1px;
 }
 
+.learn_button{
+  margin-bottom: 40px;
+}
+
 /*will contain an interactive map*/
 .Map{
+  visibility: hidden;
   flex: 1 1 100%;
   justify-content: center;
   height: 100%;
@@ -106,6 +105,7 @@ html,body, h1, p{
 
 /* Set the size of the div element that contains the map */
 #map {
+  position: relative;
   height: 100%;
   /* The height is 400 pixels */
   width: 100%;
@@ -122,15 +122,57 @@ html,body, h1, p{
 /* Bottom part of the site, and all the components*/
 .bottom{
   flex:1 1 20%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .ad{
   flex:1 1 15%;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .footer{
   flex:1 1 5%;
-  background-color: yellow;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header{
+  width: 100%;
+  height: 85px;
+  position: fixed;
+  top: 0%;
+  right: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header .button{
+  height: 20px;
+  top: 0%;
+  position: relative;
+
+}
+
+.header .logo{
+  content: url("../img/—Pngtree—creative company_1421625.png");
+  top: 0px;
+  right: 1800px;
+  justify-content: flex-start;
+  width: 100px;
+  height: 85px;
+
+}
+/*Set up navigation bar*/
+
+.header .navigation{
+  flex: 1 1 100%;
+  position: relative;
+  justify-content: flex-end;
+  list-style: none;
+  margin-right: 25px;
+  top:20%;
+  left:70%;
+}
+
+.navigation li{
+  margin-left: 25px;
 }
